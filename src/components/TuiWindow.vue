@@ -74,7 +74,7 @@ function onKey(e: KeyboardEvent) {
         <p class="kind">{{ t.kinds[current.kind] }} / {{ current.role }}</p>
         <p class="summary">{{ current.summary }}</p>
         <ul class="tags">
-          <li v-for="t in current.stack" :key="t">{{ t }}</li>
+          <li v-for="tech in current.stack" :key="tech">{{ tech }}</li>
         </ul>
         <a
           v-if="current.linkItems.length"
@@ -118,7 +118,9 @@ function onKey(e: KeyboardEvent) {
   border-bottom: 0;
   color: var(--mist);
 }
-.dim { color: var(--mist); }
+.dim {
+  color: var(--mist);
+}
 
 kbd {
   font-family: inherit;
@@ -144,12 +146,17 @@ kbd {
   white-space: nowrap;
   color: var(--mist);
 }
-.list li:hover { color: var(--foam); }
+.list li:hover {
+  color: var(--foam);
+}
 .list li.active {
   background: var(--amber);
   color: var(--ink);
 }
-.caret { display: inline-block; width: 1ch; }
+.caret {
+  display: inline-block;
+  width: 1ch;
+}
 
 .pane {
   display: flex;
@@ -157,17 +164,25 @@ kbd {
   gap: 0.9rem;
   padding: 1rem 1.25rem 1.25rem;
 }
-.kind { color: var(--lilac); }
+.kind {
+  color: var(--lilac);
+}
 .summary {
   font-family: var(--sans);
-  font-variation-settings: 'MONO' 0, 'CASL' 0.35;
+  font-variation-settings:
+    'MONO' 0,
+    'CASL' 0.35;
   font-size: var(--step-0);
   line-height: 1.5;
   color: var(--foam);
 }
 .pane a,
-.private { margin-top: auto; }
-.private { color: var(--mist); }
+.private {
+  margin-top: auto;
+}
+.private {
+  color: var(--mist);
+}
 
 .cursor {
   display: inline-block;
@@ -178,10 +193,16 @@ kbd {
   background: var(--amber);
   animation: blink 1.1s steps(1) infinite;
 }
-@keyframes blink { 50% { opacity: 0; } }
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 @media (max-width: 34rem) {
-  .body { grid-template-columns: 1fr; }
+  .body {
+    grid-template-columns: 1fr;
+  }
   .list {
     border-right: 0;
     border-bottom: 1px solid var(--line);

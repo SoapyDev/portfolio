@@ -46,8 +46,7 @@ const en: Messages = {
     harmony: {
       role: 'Built for a nonprofit',
       // TODO: describe what the tool does.
-      summary:
-        'A private tool built for a nonprofit organization to support its day-to-day work.',
+      summary: 'A private tool built for a nonprofit organization to support its day-to-day work.',
       details: [
         'Dedicated to one organization and its needs.',
         'Private: the code and the app are not public.',

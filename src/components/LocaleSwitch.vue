@@ -47,8 +47,13 @@ const { locale, toggle, t } = useI18n()
   color: var(--mist);
   transition: color 0.2s ease;
 }
-.opt.on { color: var(--ink); font-weight: 600; }
-.switch:hover .opt:not(.on) { color: var(--foam); }
+.opt.on {
+  color: var(--ink);
+  font-weight: 600;
+}
+.switch:hover .opt:not(.on) {
+  color: var(--foam);
+}
 .thumb {
   position: absolute;
   top: 2px;
@@ -59,5 +64,7 @@ const { locale, toggle, t } = useI18n()
   background: var(--amber);
   transition: transform 0.2s ease;
 }
-.thumb.right { transform: translateX(100%); }
+.thumb.right {
+  transform: translateX(100%);
+}
 </style>

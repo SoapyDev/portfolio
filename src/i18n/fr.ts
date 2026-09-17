@@ -16,7 +16,7 @@ const fr: Messages = {
   },
   hero: {
     intro:
-      "Je conçois de petits outils en ligne de commande et des applications web complètes, du schéma Postgres jusqu’au dernier bouton.",
+      'Je conçois de petits outils en ligne de commande et des applications web complètes, du schéma Postgres jusqu’au dernier bouton.',
     roles: ['Développeur', 'AQ', 'Chargé de projet'],
     where: 'Rust et Vue, basé au Québec.',
   },
@@ -38,8 +38,7 @@ const fr: Messages = {
   projects: {
     'le-club': {
       role: 'Conçu et mis en ligne',
-      summary:
-        'Une application web où amis et famille notent leurs restaurants préférés.',
+      summary: 'Une application web où amis et famille notent leurs restaurants préférés.',
       details: ['En production.'],
       stack: ['Vue 3', 'Rust / Loco', 'PostgreSQL'],
       links: ['Visiter the-club.ca'],
@@ -51,7 +50,7 @@ const fr: Messages = {
         'Un outil privé conçu pour un organisme à but non lucratif, en appui à ses activités quotidiennes.',
       details: [
         'Pensé pour un seul organisme et ses besoins.',
-        "Privé : le code et l’application ne sont pas publics.",
+        'Privé : le code et l’application ne sont pas publics.',
       ],
       stack: ['Vue 3', 'Rust / Axum', 'PostgreSQL'],
       links: [],
@@ -64,7 +63,7 @@ const fr: Messages = {
       details: [
         'Multifil : redimensionne 1 000 images (1,8 Gio) à 1200 px de large en environ 15 secondes.',
         'Lit et écrit les formats JPEG, PNG, TIFF, WebP et AVIF.',
-        "En WebP à 70 % de qualité, les fichiers pèsent environ 4 % de l’original PNG.",
+        'En WebP à 70 % de qualité, les fichiers pèsent environ 4 % de l’original PNG.',
       ],
       stack: ['Rust', 'Ligne de commande', 'Multifil'],
       links: ['Code source sur GitHub'],
@@ -85,18 +84,18 @@ const fr: Messages = {
   approach: {
     title: 'Développement incrémental',
     intro:
-      "Je travaille par incréments : chaque étape s’appuie sur quelque chose qui fonctionne déjà.",
+      'Je travaille par incréments : chaque étape s’appuie sur quelque chose qui fonctionne déjà.',
     steps: [
       {
         title: 'Régler un vrai problème',
-        body: "Partir d’un besoin concret et bâtir quelque chose d’assez précis pour vraiment le régler.",
+        body: 'Partir d’un besoin concret et bâtir quelque chose d’assez précis pour vraiment le régler.',
       },
       {
         title: 'Le mener à terme',
-        body: "Le livrer et le mettre en usage, pour qu’il fonctionne de bout en bout avant d’élargir la portée.",
+        body: 'Le livrer et le mettre en usage, pour qu’il fonctionne de bout en bout avant d’élargir la portée.',
       },
       {
-        title: "L’étendre aux problèmes semblables",
+        title: 'L’étendre aux problèmes semblables',
         body: 'Élargir la portée à des enjeux connexes, une étape à la fois, en réutilisant ce qui fonctionne déjà.',
       },
     ],
@@ -104,7 +103,7 @@ const fr: Messages = {
   stack: {
     title: 'Technologies',
     web: 'Sur le web',
-    layersLabel: "De l’interface jusqu’aux données",
+    layersLabel: 'De l’interface jusqu’aux données',
     layers: { interface: 'Interface', api: 'API', data: 'Données' },
     terminal: 'Dans le terminal',
     terminalTools: ['Rust', 'Outils en ligne de commande', 'Interfaces terminal', 'Shell'],

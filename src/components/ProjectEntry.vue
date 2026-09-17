@@ -19,7 +19,7 @@ const { t } = useI18n()
         <li v-for="d in project.details" :key="d">{{ d }}</li>
       </ul>
       <ul class="tags">
-        <li v-for="t in project.stack" :key="t">{{ t }}</li>
+        <li v-for="tech in project.stack" :key="tech">{{ tech }}</li>
       </ul>
       <p v-if="project.linkItems.length" class="links">
         <a
@@ -28,7 +28,8 @@ const { t } = useI18n()
           :href="l.href"
           target="_blank"
           rel="noopener"
-        >{{ l.label }}</a>
+          >{{ l.label }}</a
+        >
       </p>
       <p v-else class="private">{{ project.privateNote ?? t.tui.private }}</p>
     </div>
@@ -42,9 +43,13 @@ const { t } = useI18n()
   gap: 1rem clamp(1.5rem, 5vw, 4rem);
   padding-block: 2.25rem;
 }
-.entry + .entry { border-top: 1px dashed var(--line); }
+.entry + .entry {
+  border-top: 1px dashed var(--line);
+}
 
-h3 { font-size: var(--step-2); }
+h3 {
+  font-size: var(--step-2);
+}
 .kind {
   margin-top: 0.5rem;
   color: var(--lilac);
@@ -60,16 +65,26 @@ h3 { font-size: var(--step-2); }
   flex-direction: column;
   gap: 1rem;
 }
-.summary { font-size: var(--step-1); line-height: 1.45; }
+.summary {
+  font-size: var(--step-1);
+  line-height: 1.45;
+}
 .details {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--mist);
   max-width: var(--measure);
 }
-.details li + li { margin-top: 0.3rem; }
-.details li::marker { color: var(--amber); content: '› '; }
-.private { color: var(--mist); }
+.details li + li {
+  margin-top: 0.3rem;
+}
+.details li::marker {
+  color: var(--amber);
+  content: '› ';
+}
+.private {
+  color: var(--mist);
+}
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +92,8 @@ h3 { font-size: var(--step-2); }
 }
 
 @media (max-width: 44rem) {
-  .entry { grid-template-columns: 1fr; }
+  .entry {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

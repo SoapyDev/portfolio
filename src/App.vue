@@ -123,7 +123,9 @@ const year = new Date().getFullYear()
   color: var(--mist);
   text-decoration: none;
 }
-.site-header nav a:hover { color: var(--foam); }
+.site-header nav a:hover {
+  color: var(--foam);
+}
 
 .hero {
   display: grid;
@@ -195,7 +197,9 @@ const year = new Date().getFullYear()
   font-size: var(--step-1);
   margin-bottom: 0.5rem;
 }
-.steps p { color: var(--mist); }
+.steps p {
+  color: var(--mist);
+}
 
 .stack-grid {
   display: grid;
@@ -221,14 +225,21 @@ const year = new Date().getFullYear()
   padding: 0.85rem 0 0.85rem 1.25rem;
   position: relative;
 }
-.layers > li + li { border-top: 1px dashed var(--line); }
+.layers > li + li {
+  border-top: 1px dashed var(--line);
+}
 .layer-name {
   min-width: 6rem;
   color: var(--foam);
 }
-.terminal li { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 40%, var(--line)); }
+.terminal li {
+  color: var(--amber);
+  border-color: color-mix(in srgb, var(--amber) 40%, var(--line));
+}
 
-.contact p { font-size: var(--step-1); }
+.contact p {
+  font-size: var(--step-1);
+}
 .contact-links {
   display: flex;
   gap: 1.5rem;
@@ -250,13 +261,27 @@ const year = new Date().getFullYear()
 }
 
 @media (max-width: 52rem) {
-  .hero { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; }
-  .stack-grid { grid-template-columns: 1fr; }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 30rem) {
-  .site-header { flex-wrap: wrap; row-gap: 0.75rem; }
-  .header-end { display: contents; }
-  .site-header nav { order: 3; width: 100%; }
+  .site-header {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+  .header-end {
+    display: contents;
+  }
+  .site-header nav {
+    order: 3;
+    width: 100%;
+  }
 }
 </style>
