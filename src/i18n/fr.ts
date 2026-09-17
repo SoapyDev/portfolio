@@ -68,6 +68,18 @@ const fr: Messages = {
       stack: ['Rust', 'Ligne de commande', 'Multifil'],
       links: ['Code source sur GitHub'],
     },
+    vantage: {
+      role: 'Auteur',
+      summary:
+        'Teste et mesure la performance de points d’accès API HTTP à partir de suites JSON, en comparant des environnements et en rapportant les succès et échecs.',
+      details: [
+        'Tests par suites : étapes de mise en place, assertions, hooks et variables gabarits.',
+        'Mode benchmark : montée en charge progressive, arrêt sur erreurs ou limitation de débit.',
+        'Profils de charge (rampe, pic, endurance) et rapports HTML.',
+      ],
+      stack: ['Rust', 'Ligne de commande', 'HTTP'],
+      links: ['Code source sur GitHub'],
+    },
     linutil: {
       role: 'Contributeur',
       summary:

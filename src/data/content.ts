@@ -38,6 +38,12 @@ export const projects: ProjectBase[] = [
     links: ['https://github.com/SoapyDev/PictuRust'],
   },
   {
+    id: 'vantage',
+    name: 'Vantage',
+    kind: 'cli',
+    links: ['https://github.com/SoapyDev/Vantage'],
+  },
+  {
     id: 'linutil',
     name: 'Linutil',
     kind: 'tui',

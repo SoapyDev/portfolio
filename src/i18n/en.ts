@@ -67,6 +67,18 @@ const en: Messages = {
       stack: ['Rust', 'CLI', 'Multithreading'],
       links: ['Source on GitHub'],
     },
+    vantage: {
+      role: 'Author',
+      summary:
+        'Benchmarks and tests HTTP API endpoints from JSON suites, comparing environments and reporting pass/fail.',
+      details: [
+        'Suite-based testing with setup steps, assertions, hooks and templated variables.',
+        'Benchmark mode ramps concurrency and stops on errors or rate limiting.',
+        'Load profiles (ramp, spike, soak) and HTML reports.',
+      ],
+      stack: ['Rust', 'CLI', 'HTTP'],
+      links: ['Source on GitHub'],
+    },
     linutil: {
       role: 'Contributor',
       summary:
