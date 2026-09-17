@@ -23,6 +23,13 @@ npm run build    # type-check + production build in dist/
 2. Add an entry under the same `id` in `projects` in both locale files.
    `links` there holds one label per URL, in the same order.
 
-## Deploy on Vercel
+## Deploy on Fly.io
 
-Framework preset: Vite. Build command `npm run build`, output `dist`.
+Ships as a static build served by nginx (`Dockerfile`, `nginx.conf`), config
+in `fly.toml`.
+
+```bash
+flyctl auth login
+flyctl launch --no-deploy   # first time only, creates the app on Fly
+./deploy.sh                 # build + deploy
+```

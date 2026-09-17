@@ -1,22 +1,26 @@
-app = "soapyland"
-primary_region = "yyz"
+# fly.toml app configuration file generated for soapydev-portfolio on 2026-09-17T11:19:57-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'soapydev-portfolio'
+primary_region = 'yyz'
 
 [build]
-
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = "stop"
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
 
   [[http_service.checks]]
-    grace_period = "5s"
-    interval = "15s"
-    method = "GET"
-    timeout = "3s"
-    path = "/health"
+    interval = '15s'
+    timeout = '3s'
+    grace_period = '5s'
+    method = 'GET'
+    path = '/health'
 
 [[vm]]
-  size = "shared-cpu-1x"
-  memory = "256mb"
+  size = 'shared-cpu-1x'
+  memory = '256mb'
